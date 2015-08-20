@@ -1,0 +1,435 @@
+@import "/styles/structure.grid.css";
+
+/* =WEB FONTS
+----------------------------------------------------*/
+@font-face {
+    font-family: PillAlt600mgBold;
+    src: url('http://alienware.com/styles/fonts/PillAlt600mgBold.eot');
+    src: url('http://alienware.com/styles/fonts/pillalt600mg-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-bold-webfont-webfont.woff') format('woff'),
+         url('http://www.alienware.com/styles/fonts/pillalt600mg-bold-webfont-webfont.woff') format('woff'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-bold-webfont-webfont.ttf') format('truetype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-bold-webfont-webfont.svg#pill_alt_600mgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PillAlt600mgMedium;
+    src: url('http://alienware.com/styles/fonts/pillalt600mgmedium.eot');
+    src: url('http://alienware.com/styles/fonts/pillalt600mg-medium-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-medium-webfont-webfont.woff') format('woff'),
+         url('http://www.alienware.com/styles/fonts/pillalt600mg-medium-webfont-webfont.woff') format('woff'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-medium-webfont-webfont.ttf') format('truetype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-medium-webfont-webfont.svg#pill_alt_600mgmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PillAlt600mgRegular;
+    src: url('http://alienware.com/styles/fonts/pillalt600mgregular.eot');
+    src: url('http://alienware.com/styles/fonts/pillalt600mg-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-regular-webfont-webfont.woff') format('woff'),
+         url('http://www.alienware.com/styles/fonts/pillalt600mg-regular-webfont-webfont.woff') format('woff'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-regular-webfont-webfont.ttf') format('truetype'),
+         url('http://alienware.com/styles/fonts/pillalt600mg-regular-webfont-webfont.svg#pill_alt_600mgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =DEFAULTS
+   ----------------------------------------------------*/
+body 										{margin:0px;font-family:"PillAlt600mgMedium", PillAlt600mgMedium,sans-serif; }
+.SiteTakeover_GameVictorious				{margin:0px; padding:0px; border:0px;font-family:"PillAlt600mgMedium",sans-serif; background:url('http://image.alienware.com/images/site-takeover/site-takeover_GameVictorious.jpg') no-repeat center top fixed #0d0d0d;}
+
+.SiteTakeover_Epic_Landing_06_2013_v2a		{margin:0px; padding:0px; border:0px;font-family:"PillAlt600mgMedium",sans-serif; background:url('http://image.alienware.com/images/site-takeover/site-takeover-epic-landing-05-07-2013.jpg') no-repeat center top scroll #050502;}
+
+.SiteTakeover_Epic_Landing_2013_06_08		{margin:0px; padding:0px; border:0px;font-family:"PillAlt600mgMedium",sans-serif; background:url('http://image.alienware.com/images/site-takeover/site-takeover-epic-landing-2013-06-11.jpg') no-repeat center top scroll #050502;}
+.SiteTakeover_Epic_Landing_06_2013_v2c		{margin:0px; padding:0px; border:0px;font-family:"PillAlt600mgMedium",sans-serif; background:url('http://image.alienware.com/images/site-takeover/site-takeover-epic-landing-05-15-2013.jpg') no-repeat center top scroll #050502;}
+.plain_background							{margin:0px; padding:0px; border:0px;font-family:"PillAlt600mgMedium",sans-serif; background:#050502;}
+
+a											{color:#0DA1B2;text-decoration:none; font-size:12px;}
+a:hover										{color:#0AB5C9;text-decoration:underline;}
+img a										{outline:none; }
+
+#content h1 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:22px;font-weight:normal;letter-spacing:0.00em;line-height:27px;color:#FFFFFF;text-decoration:none;text-shadow:0px 1px 3px #25221d;}
+#content h2 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:18px;font-weight:normal;letter-spacing:0.00em;line-height:25px;color:#FFFFFF;text-decoration:none;text-shadow:0px 1px 3px #25221d;}
+#content h3 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:14px;font-weight:normal;letter-spacing:0.00em;line-height:19px;color:#FFFFFF;text-decoration:none;text-shadow:0px 1px 3px #25221d;}
+#content h4 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:18px;font-weight:normal;letter-spacing:0.00em;line-height:22px;color:#FFFFFF;text-shadow:0px 1px 3px #25221d;}
+#content h5 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:13px;font-weight:normal;letter-spacing:0.00em;line-height:19px;color:#FFFFFF;text-decoration:none;text-shadow:0px 1px 3px #25221d;}
+#content h6 									{font-family:"PillAlt600mgMedium",sans-serif; font-size:13px;font-weight:bold;letter-spacing:0.00em;line-height:15px;color:#FFFFFF;text-decoration:none;text-shadow:0px 1px 3px #25221d;}
+
+h2.tag_line									{font-size:80%;color:#BABABA;}
+p.tag_line									{margin-top:-10px;}
+
+iframe										{display:none;}
+.pp_content iframe							{display:block;}
+#mainBackground_GameVictorious iframe			{display:inline;}
+
+#content p.default_v2a 						{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+#content ul.bullets_v4a 						{width:auto; height:auto; margin:0px 0px 0px 0px; padding:0px 0px 20px 0px; list-style:none; list-style-type:none;}
+#content ul.bullets_v4a li 					{margin:0px 0px 0px 0px; padding:0px 0px 0px 12px; font-size:12px; color:#b7b7b7; line-height:17px; background:url("http://image.alienware.com/images/global_images/bullet.jpg") no-repeat scroll 0 6px;}
+#SupportLoginInfoForm_User_InfoForm_InfoForm_HtmlTable span				{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+#SupportSignUpInfoForm_Verification_InfoForm_InfoForm_HtmlTable span		{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+#SupportSignUpInfoForm_NewUser_InfoForm_InfoForm_HtmlTable span			{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+#SupportForgotPasswordInfoForm1_ForgotPassword_InfoForm_DataRow_Repeater_ctl01_Row_Id span	{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+
+#driver_selection strong						{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+
+#content div.one_column 						{display:block;width:890px; height:auto; margin:0px 0px 20px 0px; padding:30px; list-style:none; list-style-type:none; overflow:visible; position:relative; background-color:#101010; border-radius:9px 9px 9px 9px;-moz-border-radius-topleft:9px; -moz-border-radius-topright:9px; -moz-border-radius-bottomright:9px; -moz-border-radius-bottomleft:9px; -webkit-border-top-left-radius:9px; -webkit-border-top-right-radius:9px; -webkit-border-bottom-left-radius:9px; -webkit-border-bottom-right-radius:9px; text-align:left;}
+#content div.one_column p					{width:auto; height:auto; margin:0px 0px 0px 0px; padding:8px 0px 12px 0px; font-size:12px; color:#b7b7b7; line-height:15px;}
+
+.btn_iagree 									{background:transparent url("http://image.alienware.com/images/global_images/btn_iagree.png") no-repeat scroll 0 0;cursor:pointer;height:22px;width:84px;display:block;line-height:22px; outline:none;}
+.btn_iagree:hover 							{background:transparent url("http://image.alienware.com/images/global_images/btn_iagree.png") 0px -22px no-repeat; outline:none;}
+.btn_iagree  span 							{display:none; }
+
+hr 											{height:0;border:0;border-top:1px solid #454545;}
+sup											{font-size:7px; line-height:7px;}
+ul.actions li.separator						{border-style:none solid none none;border-width:1px;border-color:#B3B3B3;line-height:11px;}
+ul.actions li.separatorEnd						{line-height:11px;}
+
+li.separator_gv								{border-style:none solid none none;border-width:1px;border-color:#434343;line-height:11px;}
+li.separatorEnd_gv							{line-height:11px;}
+
+.far_left									{float:left;}
+.far_right									{float:right;}
+
+.new_tag									{padding-left:35px;background-image:url("/products/icon_new_red_tag.gif");background-repeat:no-repeat;background-position:left 4px;}
+
+.hover-button								{width:100%;margin:0 0 2%;}
+.hover-button a								{color:#00a0f0;text-transform:uppercase;}
+.hover-content								{position:absolute;background:#000;border:1px solid #d1d1d1;padding:1% 1.5%;z-index:10;width:90%;display:none;}
+.hover-content h3							{text-transform:uppercase;font-size:18px !important;font-family:'PillAlt600mgRegular', sans-serif !important;margin:0 0 2%;}
+.hover-content p								{line-height:140%;margin:0 0 2%;}
+
+
+/* =COLORS
+   ----------------------------------------------------*/
+.alienyellow {color:#fdde32;} .aliengreen {color:#bcd021;} .aliencyan {color:#32e4ee;} .alienorange {color:#e25338;} .aliengrey {color:#2f2f2f;} .alienred {color:#ff0000;} li.odd_row, li.even_row { padding:5px 10px; } .even_row    {background-color:#EFEFEF;}
+
+/* =HEADER
+   ----------------------------------------------------*/
+#content														{display:block; width:100%; max-width:950px; height:auto; margin:12px auto 0px auto; padding:0px 0px 0px 0px; clear:both;position:relative;overflow:visible;}
+#banner															{height:auto !important;}
+
+/* =FOOTER LOWERNAV GAME VICTORIOUS   ----------------------------------------------------*/
+#lowerNav_GameVictorious									{width:100%; max-width:950px; height:100%;margin:2px auto 20px auto;padding:0px;}
+#lowerNav_GameVictorious ul.footer_links_list				{width:730px; height:23px; margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none;}
+#lowerNav_GameVictorious ul.footer_links_list li				{float:left;}
+#lowerNav_GameVictorious ul.footer_links_list li a				{display:block;width:auto; height:23px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding:0px 14px;font-size:11px; font-weight:normal; line-height:23px; color:#dddddd; text-decoration:none; border:none; outline:none;}
+#lowerNav_GameVictorious ul.footer_links_list li a:hover		{color:#FFFFFF; text-decoration:none; border:none; outline:none;}
+#lowerNav_GameVictorious ul.footer_links_list li a.first_link	{padding:0px 14px 0px 0px;}
+#lowerNav_GameVictorious ul.footer_links_list li.footer_text	{display:block;width:auto; height:23px; padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding:0px 0px 0px 13px;font-size:11px; font-weight:normal; line-height:23px; color:#dddddd; text-decoration:none; border:none; outline:none;}
+
+#lowerNav_GameVictorious #subscribe							{float:left;position:absolute;margin:-30px 0 0 325px;padding:10px 5px;width:300px;color:#FFF;font-size:110%;font-weight:800;text-align:center;border-style:solid;border-width:1px;border-color:#808080;background-color:#000;}
+#lowerNav_GameVictorious .far_right							{float:right;line-height:11px;}
+#lowerNav_GameVictorious .alienware800 						{color:#fff;font-weight:bold;}
+#lowerNav_GameVictorious .followTwitter_Link a				{display:block;width:23px !important; height:23px;margin:0px 0px 0px 20px !important; padding:0px 0px 0px 0px !important;background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) 0px -242px no-repeat scroll transparent;}
+#lowerNav_GameVictorious .followTwitter_Link a:hover			{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) 0px -265px no-repeat scroll transparent;}
+#lowerNav_GameVictorious .followTwitter_Link span 			{display:none;}
+
+#lowerNav_GameVictorious .followFacebook_Link a 				{display:block;width:23px !important; height:23px;margin:0px 20px 0px 0px !important; padding:0px 0px 0px 0px !important;background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) -23px -242px no-repeat scroll transparent;}
+#lowerNav_GameVictorious .followFacebook_Link a:hover 		{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) -23px -265px no-repeat scroll transparent;}
+#lowerNav_GameVictorious .followFacebook_Link span 			{display:none;}
+
+#lowerNav_GameVictorious p.thanku							{width:auto;height:10px;margin:0px 5px 0px 0px !important;padding:0px 0px 2px 0px !important;font-size:11px;color:#b2b2b2b; font-weight:normal;}
+
+#lowerNav_GameVictorious li.tooltiplink 						{position:relative;}
+#lowerNav_GameVictorious li.tooltiplink div.tooltip 			{display:none;font-family:"Arial",Trebuchet MS,Helvetica,sans-serif;font-size:11px;font-weight:normal;color:#b2b2b2;height:89px;left:207px;line-height:15px;margin:0;padding:10px 10px 10px 20px;position:absolute;text-align:left;top:-15px;width:175px;z-index:10;background:url("http://image.alienware.com/images/global_images/content_tooltip_bg.png") 0px 0px no-repeat scroll transparent;}
+#lowerNav_GameVictorious li.tooltiplink:hover div.tooltip 		{display:block;}
+#ctl00_ctl00_BodyContent_mainFooter_ucLowerNav_AlienwareInsider1_pdatePanel1 		{z-index:1;}
+#lowerNav_GameVictorious #news-signup						{z-index:1;}
+#lowerNav_GameVictorious #news-signup .far_left	input 		{width:140px;height:14px;margin:0px -5px 0px 20px !important;padding:3px 10px 3px 10px !important;font-size:11px; font-weight:normal; line-height:14px; color:#b2b2b2; vertical-align:top; border:none; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) 0px -202px no-repeat scroll transparent; float:left; z-index:1;}/*-moz-border-radius:9px 0px 0px 9px;-webkit-border-radius:9px 0px 0px 9px;*/  
+
+#lowerNav_GameVictorious #news-signup .far_left	#signup 				{display:block;width:37px;height:23px;margin:0px 20px 0px 0px;padding:0px 0px 0px 0px;font-size:11px; font-weight:normal; color:#b2b2b2; border:none; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) left -130px no-repeat scroll transparent; z-index:1;}
+#lowerNav_GameVictorious #news-signup .far_left	#signup:hover 		{display:block;width:37px;height:23px;margin:0px 5px 0px 0px;padding:0px 0px 0px 0px;font-size:11px; font-weight:normal; color:#b2b2b2; border:none; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) left -153px no-repeat scroll transparent;}
+
+#lowerNav_GameVictorious div.btn-rss							{display:block;width:47px;height:11px;}
+#lowerNav_GameVictorious div.btn-rss a						{float:left;position:absolute;margin-top:-2px;}
+
+#globalization_GameVictorious 								{width:176px;height:23px; margin:0px 24px 0px 0px;padding:0px;font-size:11px;color:#B3B3B3; text-align:center; position:relative; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png" ) 0px -202px no-repeat scroll transparent;z-index:5;}
+#globalization_GameVictorious h4								{width:150px; height:23px;margin:0px -24px 0px 0px; padding:0px 40px 0px 10px; font-size:12px; line-height:20px; font-weight:bold; color:#b2b2b2; text-align:left; letter-spacing:0.00em; font-family:"Arial", Trebuchet MS, Helvetica, sans-serif; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat right -130px scroll transparent;}
+#globalization_GameVictorious h4:hover						{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat right -153px scroll transparent;}
+
+#globalization_GameVictorious ul								{width:auto; height:auto; margin:0px; padding:0px; list-style:none; list-style-type:none;}
+#globalization_GameVictorious ul li:hover div.global			{display:block;}
+
+#globalization_GameVictorious div.global 					{display:none;width:520px; height:130px; margin:0px; padding:10px; list-style:none; list-style-type:none; overflow:hidden; position:absolute; top:19px; right:-24px; background-color:#212121; border-radius:9px 0px 9px 9px;-moz-border-radius-topleft:9px; -moz-border-radius-topright:0px; -moz-border-radius-bottomright:9px; -moz-border-radius-bottomleft:9px; -webkit-border-top-left-radius:9px; -webkit-border-top-right-radius:0px; -webkit-border-bottom-left-radius:9px; -webkit-border-bottom-right-radius:9px; behavior:url(/Include_Pages/css/rounded-corners/PIE.htc);text-align:left;}
+#globalization_GameVictorious div.global ul.col1				{width:90px; height:auto; margin:0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none; float:left;}
+#globalization_GameVictorious div.global ul.col1 li 			{display:block; width:90px; height:21px;margin:0px; padding:0px;}
+#globalization_GameVictorious div.global ul.col1 li a			{display:block; width:90px; height:21px;margin:0px; padding:0px; font-size:11px; color:#b7b7b7; text-decoration:none; border:none; line-height:21px;}
+#globalization_GameVictorious div.global ul.col1 li a:hover	{display:block; width:90px; height:21px;margin:0px; padding:0px; font-size:11px; color:#FFFFFF; text-decoration:none; border:none; line-height:21px;}
+
+#globalization_GameVictorious div.global ul.col2				{width:122px; height:auto; margin:0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none; float:left;}
+#globalization_GameVictorious div.global ul.col2 li 			{display:block; width:122px; height:21px;margin:0px; padding:0px;}
+#globalization_GameVictorious div.global ul.col2 li a			{display:block; width:122px; height:21px;margin:0px; padding:0px; font-size:11px; color:#b7b7b7; text-decoration:none; border:none; line-height:21px;}
+#globalization_GameVictorious div.global ul.col2 li a:hover	{display:block; width:122px; height:21px;margin:0px; padding:0px; font-size:11px; color:#FFFFFF; text-decoration:none; border:none; line-height:21px;}
+
+#globalization_GameVictorious div.global ul.col3				{width:110px; height:auto; margin:0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none; float:left;}
+#globalization_GameVictorious div.global ul.col3 li 			{display:block; width:110px; height:21px;margin:0px; padding:0px;}
+#globalization_GameVictorious div.global ul.col3 li a			{display:block; width:110px; height:21px;margin:0px; padding:0px; font-size:11px; color:#b7b7b7; text-decoration:none; border:none; line-height:21px;}
+#globalization_GameVictorious div.global ul.col3 li a:hover	{display:block; width:110px; height:21px;margin:0px; padding:0px; font-size:11px; color:#FFFFFF; text-decoration:none; border:none; line-height:21px;}
+
+#globalization_GameVictorious div.global ul.col4				{width:90px; height:auto; margin:0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none; float:left;}
+#globalization_GameVictorious div.global ul.col4 li 			{display:block; width:90px; height:21px;margin:0px; padding:0px;}
+#globalization_GameVictorious div.global ul.col4 li a			{display:block; width:90px; height:21px;margin:0px; padding:0px; font-size:11px; color:#b7b7b7; text-decoration:none; border:none; line-height:21px;}
+#globalization_GameVictorious div.global ul.col4 li a:hover	{display:block; width:90px; height:21px;margin:0px; padding:0px; font-size:11px; color:#FFFFFF; text-decoration:none; border:none; line-height:21px;}
+
+span.flag_australia, span.flag_canada, span.flag_france, span.flag_germany, span.flag_poland, span.flag_uk, span.flag_ireland, span.flag_italy,span.flag_austria, span.flag_newzealand, span.flag_unitedstates, span.flag_mexico, span.flag_netherlands, span.flag_switzerland, span.flag_spain, span.flag_belgium,span.flag_sweden, span.flag_norway, span.flag_denmark, span.flag_singapore, span.flag_india, span.flag_hongkong, span.flag_china, span.flag_korea, span.flag_japan, span.flag_malaysia
+															{display:block; width:21px; height:13px;margin:0px; padding:0px;}
+															
+span.flag_australia											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px 0px scroll transparent;}
+span.flag_canada											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -23px scroll transparent;}
+span.flag_france											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -46px scroll transparent;}
+span.flag_germany											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -69px scroll transparent;}
+
+span.flag_poland											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -92px scroll transparent;}
+span.flag_uk												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -115px scroll transparent;}
+span.flag_ireland											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -138px scroll transparent;}
+span.flag_italy												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -161px scroll transparent;}
+
+span.flag_austria											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -184px scroll transparent;}
+span.flag_newzealand										{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -207px scroll transparent;}
+span.flag_unitedstates										{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -230px scroll transparent;}
+span.flag_mexico											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -253px scroll transparent;}
+span.flag_netherlands										{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -276px scroll transparent;}
+span.flag_switzerland										{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -299px scroll transparent;}
+span.flag_spain												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -322px scroll transparent;}
+span.flag_belgium											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -345px scroll transparent;}
+
+span.flag_sweden											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -368px scroll transparent;}
+span.flag_norway											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -391px scroll transparent;}
+span.flag_denmark											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -414px scroll transparent;}
+span.flag_singapore											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -437px scroll transparent;}
+span.flag_india												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -460px scroll transparent;}
+
+span.flag_hongkong											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -483px scroll transparent;}
+span.flag_china												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -506px scroll transparent;}
+span.flag_korea												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -529px scroll transparent;}
+span.flag_japan												{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -552px scroll transparent;}
+span.flag_malaysia											{background:url("http://image.alienware.com/images/global_images/country_flags_selection.gif") no-repeat 0px -575px scroll transparent;}
+
+span.icon_clicktochat										{display:block; width:35px; height:32px;margin:0px; padding:0px; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat -480px -130px scroll transparent;}
+
+span.icon_facebook											{display:block; width:23px; height:23px;margin:0px; padding:0px; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat -23px -242px scroll transparent;}
+span.icon_facebook:hover									{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat -23px -265px scroll transparent;}
+
+span.icon_newsletter										{display:block; width:23px; height:23px;margin:0px; padding:0px; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat -46px -242px scroll transparent;}
+span.icon_newsletter:hover									{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat -46px -265px scroll transparent;}
+
+span.icon_twitter											{display:block; width:23px; height:23px;margin:0px; padding:0px; background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat 0px -242px scroll transparent;}
+span.icon_twitter:hover										{background:url("http://image.alienware.com/images/css_images/aw_header_logo_GameVictorious.png") no-repeat 0px -265px scroll transparent;}
+
+#globalization_GameVictorious div.global ul.col5				{width:100px; height:auto; margin:0px; padding:0px 0px 0px 0px; list-style:none; list-style-type:none; float:left;}
+#globalization_GameVictorious div.global ul.col5 li 			{display:block; width:100px; height:21px;margin:0px; padding:0px;}
+#globalization_GameVictorious div.global ul.col5 li a			{display:block; width:100px; height:21px;margin:0px; padding:0px; font-size:11px; color:#b7b7b7; text-decoration:none; border:none; line-height:21px;}
+#globalization_GameVictorious div.global ul.col5 li a:hover	{display:block; width:100px; height:21px;margin:0px; padding:0px; font-size:11px; color:#FFFFFF; text-decoration:none; border:none; line-height:21px;}
+
+#globalization_GameVictorious .float_left					{float:left; padding:4px 6px 2px 5px;}	
+
+#globalization_GameVictorious td.language_bar a 				{color:#B3B3B3;margin-left:8px;margin-right:8px;}
+#globalization_GameVictorious td.language_bar a:hover 		{color:#ffffff;}
+#globalization_GameVictorious td.language_bar span 			{color:#B3B3B3;}
+
+/* =BANNER CONTENT STYLES
+   ----------------------------------------------------*/
+ /*Added styles for Echo family*/
+.echo-laptops										{font-size:330% !important;color:#30fe14 !important;text-align:center !important;width:100% !important;position;absolute;z-index:1;position:absolute;top:12%}
+.echo-laptops-copy									{width:20%;max-width:900px;bottom:16%;right:3%;left:initial;float:right;min-width:240px;position:absolute;z-index:1;}
+.echo-laptops-image									{top:8%;}  
+.onepx-box-blue-cta, .onepx-box-yellow-cta 			{margin-top:10px;} 
+.banner_cta_green, .banner_cta_green:hover 			{padding:5px;display:inline-block;border-radius:0px;} 
+#home_featured_banners .full_sized_image {max-width:1350px;min-width:inherit;width:100%;} 
+.banner_copy_vertical_full_image_banner, .banner_copy_vertical_left {z-index:2;} 
+.cta {display:block;margin:0 !important;padding:0 !important;z-index:999999;} 
+.center {text-align:center !important;} .right-align {text-align:right !important;float:none !important;} 
+.pp_content_container iframe {display:inline;} 
+#cta-large-head{font-family: "PillAlt600mgBold",sans-serif;font-size: 200%;font-weight: normal;letter-spacing: 0.00em;line-height:91%;color:#f00000;text-decoration: none;text-shadow: 0px 1px 3px #25221d;text-transform: uppercase;} 
+#cta-large p.subhead{font-size:80%;line-height:110%;margin-bottom:5px;} 
+.btn_build_yours_green{background-color:#f00000;width:auto;display: inline-block} 
+.btn_build_yours_green:hover{background-color:#f00000;} 
+#banner1 #home_featured_banners .banner_copy_vertical_left {left:31% !important;} 
+.banner_copy_vertical_left_noJS{margin-top: 1%;top: 4%;left: 34%;min-width: 200px;width: 70%;position: absolute;height: auto;z-index: 2;}
+.bannercta_green 									{background:#30fe14 !important;padding:8px 8px 1px 7px !important;display:inline-block !important}
+.bannercta_green:hover								{background:#fff;}
+
+div#banner_yellow_2va										{display:block;width:340px; height:auto;margin:50px auto 0px 50px; padding:0px;}
+div#banner_yellow_2va a img									{display:block;width:948px; height:198px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_yellow_2va h1										{width:auto; height:78px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#FFF000; font-size:45px; line-height:43px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_yellow_2va p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px;font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_2va										{display:block;width:340px; height:auto;margin:50px auto 0px 50px; padding:0px;}
+div#banner_green_2va a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_2va h1										{width:auto; height:87px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#00F058; font-size:42px; line-height:43px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_2va p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_blue_2va											{display:block;width:540px; height:auto;margin:80px auto 0px 80px; padding:0px;}
+div#banner_blue_2va a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_blue_2va h1										{width:auto; height:66px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#00a0f0; font-size:38px; line-height:37px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_blue_2va p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_blue_v2b											{display:block;width:540px; height:auto;margin:50px auto 0px 470px; padding:0px;}
+div#banner_blue_v2b a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_blue_v2b h1										{width:auto; height:66px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#00a0f0; font-size:38px; line-height:37px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_blue_v2b p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_teal_v2e											{display:block;width:440px; height:auto;margin:90px auto 0px 90px; padding:0px;}
+div#banner_teal_v2e a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_teal_v2e h1										{width:auto; height:68px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#00ffff; font-size:42px; line-height:40px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold" , Arial, sans-serif;}
+div#banner_teal_v2e p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_red_v2a											{display:block;width:540px; height:auto;margin:50px auto 0px 50px; padding:0px;}
+div#banner_red_v2a a img										{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_red_v2a h1										{width:auto; height:75px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cf2d3a; font-size:42px; line-height:41px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_red_v2a p											{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_orange_2va										{display:block;width:350px; height:auto;margin:80px auto 0px 50px; padding:0px;}
+div#banner_orange_2va a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_orange_2va h1										{width:auto; height:45px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#f08000; font-size:45px; line-height:40px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_orange_2va p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_orange_v2a										{display:block;width:360px; height:auto;margin:80px auto 0px 50px; padding:0px;}
+div#banner_orange_v2a a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_orange_v2a h1										{width:auto; height:66px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#f08000; font-size:38px; line-height:38px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_orange_v2a p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_orange_AlienFX_Eye_Desktops						{width:230px; height:auto;margin:0px; padding:0px; position:absolute;top:160px; left:40px;}
+div#banner_orange_AlienFX_Eye_Desktops a img					{width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_orange_AlienFX_Eye_Desktops h1					{width:auto; height:50px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#f08000; font-size:60px; line-height:60px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_orange_AlienFX_Eye_Desktops h2					{width:auto; height:20px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#f08000; font-size:32px; line-height:32px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_orange_AlienFX_Eye_Desktops p						{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_red_v2a											{display:block;width:540px; height:auto;margin:70px auto 0px 50px; padding:0px;}
+div#banner_red_v2a a img										{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_red_v2a h1										{width:auto; height:66px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cf2d3a; font-size:35px; line-height:35px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_red_v2a p											{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_red_v2b											{display:block;width:540px; height:auto;margin:70px auto 0px 50px; padding:0px;}
+div#banner_red_v2b a img										{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_red_v2b h1										{width:auto; height:46px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cf2d3a; font-size:48px; line-height:55px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold" , Arial, sans-serif;}
+div#banner_red_v2b p											{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_red_v2c											{display:block;width:280px; height:auto;margin:70px auto 0px 580px; padding:0px;}
+div#banner_red_v2c a img										{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_red_v2c h1										{width:auto; height:76px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cf2d3a; font-size:48px; line-height:44px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold" , Arial, sans-serif;}
+div#banner_red_v2c p											{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_red_v2d											{display:block;width:610px; height:auto;margin:30px auto 0px 430px; padding:0px;}
+div#banner_red_v2d a img										{display:block;width:948px; height:198px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_red_v2d h1										{width:auto; height:35px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cf2d3a; font-size:43px; line-height:43px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold" , Arial, sans-serif;}
+div#banner_red_v2d p											{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_v2b										{display:block;width:330px; height:auto;margin:90px auto 0px 550px; padding:0px;}
+div#banner_green_v2b a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_v2b h1										{width:auto; height:120px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#46d845; font-size:60px; line-height:58px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_v2b h1	label								{color:#FFFFFF;}
+div#banner_green_v2b p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_v2c										{display:block;width:540px; height:auto;margin:50px auto 0px 50px; padding:0px;}
+div#banner_green_v2c a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_v2c h1										{width:auto; height:75px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#46d845; font-size:51px; line-height:44px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_v2c p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_v2d										{display:block;width:300px; height:auto;margin:50px auto 0px 70px; padding:0px;}
+div#banner_green_v2d a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_v2d h1										{width:auto; height:75px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#46d845; font-size:51px; line-height:44px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_v2d p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_v2e										{display:block;width:600px; height:auto;margin:30px auto 0px 50px; padding:0px;}
+div#banner_green_v2e a img									{display:block;width:948px; height:198px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_v2e h1										{width:auto; height:35px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#46d845; font-size:42px; line-height:41px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_v2e p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_green_AlienFX_Eye_Laptops						{width:230px; height:auto;margin:0px; padding:0px; position:absolute;top:100px; left:40px;}
+div#banner_green_AlienFX_Eye_Laptops a img					{width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_green_AlienFX_Eye_Laptops h1						{width:auto; height:45px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#46d845; font-size:60px; line-height:55px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_green_AlienFX_Eye_Laptops p						{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_limegreen_v3a									{display:block;width:360px; height:auto;margin:50px 400px 0px 50px;}
+div#banner_limegreen_v3a a img								{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_limegreen_v3a h1									{width:auto; height:90px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cfdb00; font-size:43px; line-height:48px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_limegreen_v3a p									{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular", Trebuchet MS, Helvetica, sans-serif;}
+
+div#banner_limegreen_v3b									{display:block;width:350px; height:auto;margin:90px 50px 0px 550px;}
+div#banner_limegreen_v3b a img								{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_limegreen_v3b h1									{width:auto; height:75px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#cfdb00; font-size:39px; line-height:41px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial,}
+div#banner_limegreen_v3b p									{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular", Trebuchet MS, Helvetica, sans-serif;}
+
+div#banner_purple_v2d										{display:block;width:260px; height:auto;margin:83px auto 0px 660px; padding:0px;}
+div#banner_purple_v2d a img									{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_purple_v2d h1										{width:auto; height:30px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#733b97; font-size:40px; line-height:39px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_purple_v2d p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px;font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_purple_v2e										{display:block;width:400px; height:auto;margin:30px auto 0px 500px; padding:0px;}
+div#banner_purple_v2e a img									{display:block;width:948px; height:198px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_purple_v2e h1										{width:auto; height:30px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#733b97; font-size:45px; line-height:43px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_purple_v2e p										{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px;font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular",Arial, Helvetica, sans-serif;}
+
+div#banner_v3a												{display:block;width:350px; height:auto;margin:50px 400px 0px 50px;}
+div#banner_v3a a img											{display:block;width:948px; height:358px; position:absolute; top:0px; left:0px; z-index:0;}
+div#banner_v3a h1											{width:auto; height:70px;margin:0px 0px 0px 0px; padding:0px 0px 0px 0px; text-transform:capitalize; font-weight:normal; color:#A0F000; font-size:32px; line-height:39px; font-weight:normal; text-align:left; letter-spacing:-0.05em; text-shadow:1px 2px #000000; font-family:"PillAlt600mgBold", Arial, sans-serif;}
+div#banner_v3a p												{width:auto; height:auto;margin:0px 0px 10px 0px; padding:10px 0px 0px 0px; font-weight:normal; color:#FFFFFF; font-size:15px;line-height:22px; text-align:left; font-family:"PillAlt600mgRegular", Trebuchet MS, Helvetica, sans-serif;}
+
+/* =BANNER BUTTON CTA STYLES
+   ----------------------------------------------------*/
+.banner_cta_red			 									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#cf2d3a;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_red:hover	 									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#cf2d3a;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_red	label	 									{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_teal_slim                                     {display:block; width:auto; height:21px;margin:0px; padding:0px 15px 0px 10px; font-size:15px; line-height:20px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial; text-decoration:none; position:relative; background:#00F0F0;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_teal_slim:hover                               { text-decoration:none; color:#000000; background:#00ffff;}
+.banner_cta_teal_slim label                                {display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px -1px scroll;}
+
+.banner_cta_teal											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#00FFFF;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_teal:hover	 									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#00FFFF;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_teal label	 									{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_blue											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#00a0f0;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_blue:hover	 									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#00a0f0;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_blue label	 									{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_orange											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#f08000;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_orange:hover	 								{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#f08000;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_orange label	 									{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_green											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#46d845;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_green:hover	 									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#46d845;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_green label	 									{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_green_slim										{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold"; text-decoration:none; position:relative; background:#46d845;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_green_slim:hover	 							{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:100; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold"; text-decoration:none; position:relative; background:#46d845;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_green_slim label	 								{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_limegreen										{display:block; width:auto; height:24px;margin:0px; padding:0px 15px 0px 10px; font-size:15px; line-height:19px; font-weight:bold; color:#000000;  vertical-align:middle !important; text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold"; text-decoration:none; position:relative; background:#cfdb00;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_limegreen:hover	 								{display:block; width:auto; height:24px;margin:0px; padding:0px 15px 0px 10px; font-size:15px; line-height:19px; font-weight:bold; color:#000000; vertical-align:middle !important; text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold"; text-decoration:none; position:relative; background:#cfdb00;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_limegreen label	 								{display:block; width:18px; height:24px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; vertical-align:bottom !important; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat 0px 0px scroll;}
+
+.banner_cta_limegreen_slim									{display:block; width:auto; height:21px;margin:0px; padding:0px 15px 0px 10px; font-size:15px; line-height:20px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial; text-decoration:none; position:relative; background:#cfdb00;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_limegreen_slim:hover	 						{ text-decoration:none; color:#000000; background:#dde64d;}
+.banner_cta_limegreen_slim label	 							{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px -1px scroll;}
+
+.banner_cta_yellow											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#FFF000;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_yellow:hover									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#FFF000;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_yellow label										{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.banner_cta_purple											{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#733b97;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_purple:hover									{display:block; width:auto; height:20px;margin:0px; padding:2px 15px 2px 10px; font-size:15px; line-height:15px; font-weight:normal; color:#000000; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative; background:#733b97;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.banner_cta_purple label										{display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:0px; right:0px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.btn_purchase_path											{display:block; width:auto; height:22px;margin:0px; padding:0px 15px 0px 25px; font-size:11px; line-height:17px; font-weight:normal; color:#FFFFFF; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative;background:url("http://image.alienware.com/images/global_images/btn_purchase_path.png") no-repeat top right scroll;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.btn_purchase_path:hover									{display:block; width:auto; height:22px;margin:0px; padding:0px 15px 0px 25px; font-size:11px; line-height:17px; font-weight:normal; color:#FFFFFF; text-align:left; letter-spacing:-0.01em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgBold", Arial, text-decoration:none; position:relative;background:url("http://image.alienware.com/images/global_images/btn_purchase_path.png") no-repeat -22px right scroll;-moz-border-radius:12px; -webkit-border-radius:12px; -khtml-border-radius:12px; border-radius:12px;behavior:url(/styles/rounded-corners/PIE.htc); border:none; outline:none;}
+.btn_purchase_path label										{display:block; width:24px; height:22px;margin:0px; padding:0px;position:absolute; top:0px; left:0px; background:url("http://image.alienware.com/images/global_images/btn_arrow_caret.png") no-repeat 3px 2px scroll;}
+
+.cta_square_light                                           {display:block; color:#14120e; background:#c5c0b4; width:auto; height:24px;margin:0px; padding:7px 10px 0px 10px; font-size:17px; line-height:20px; font-weight:normal;  text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgMedium", Arial; text-decoration:none; position:relative;  border:none; outline:none;}
+.cta_square_light:hover                                        {text-decoration:none; color:#14120e; background:#f1eee8;}
+.cta_square_light label                                       {display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:3px; right:5px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta.png") no-repeat -2px 1px scroll;}
+
+.cta_square_dark                                          {display:block; color:#c5c0b4; background:#14120e; width:auto; height:26px;margin:0px; padding:7px 10px 0px 10px; font-size:17px; line-height:20px; font-weight:normal;  text-align:left; letter-spacing:-0.00em; text-shadow:0px 0px #000000; font-family:"PillAlt600mgRegular", Arial; text-decoration:none; position:relative;  border:none; outline:none;}
+.cta_square_dark:hover                                        {text-decoration:none; color:#c5c0b4; background:#22211f;}
+.cta_square_dark label                                        {display:block; width:18px; height:20px;margin:0px; padding:0px;position:absolute; top:3px; right:5px; background:url("http://image.alienware.com/images/global_images/btn_icon_banner_cta_dark.png") no-repeat -2px 1px scroll;}
+
+#footer 														{width:100%; max-width:950px; height:auto; margin:0px auto; padding:0px 0px 0px 0px;}
+#footer .copyright 											{margin:auto;text-align:center;color:#dddddd;font-size:11px;}
+#footer .disclaimers											{margin:auto;text-align:center;color:#dddddd;font-size:10px;margin:0 50px 0 50px;}
+#footer p 													{margin:0px; padding:8px 0px 12px 0px;font-family:"Arial",sans-serif; font-size:11px;font-weight:normal;letter-spacing:0.00em;line-height:15px;color:#666666;text-decoration:none;text-shadow:0px 0px #000000;}

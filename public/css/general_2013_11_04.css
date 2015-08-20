@@ -1,0 +1,96 @@
+/* -----GAME VICTORIOUS TEXTURE CONTENT STYLING SETTINGS -------------------------------- */
+/* ----- SET BACKGROUNDS AND PAGE CONTENT STYLING -------------------------------*/
+body															{height:100%;}
+html, body 														{width:100%; overflow-x:hidden;}
+img																{max-width:100%;max-height:100%;}
+.texture_BG														{background: #11100e;}
+#homepage_BG													{margin:0px; padding:0px; border:0px;font-family:PillAlt600mgMedium,sans-serif; background:url('http://image.alienware.com/images/global_images/homepagebackground-brand-texture.jpg') no-repeat center top transparent; background-size:100% 134%; min-height:100%;}   
+#content_GameVictoriousTexture									{width:100%; height:100%; max-height:824px;margin:0px auto;padding:0px; position:relative; top:-10px; border-bottom: solid 1px #28231b;}
+#content_GameVictoriousTexture hr								{border: solid 1px #28231b;}
+#content_GameVictoriousTexture h1								{width:auto; height:auto;margin:0px 0px 15px 0px; padding: 20px 0px 0px 0px; font-size:39px; text-transform:capitalize;  line-height:30px; font-weight: normal; color:#FFFFFF; text-align:left; letter-spacing:-0.02em; text-shadow: 1px 2px #000000; font-family: PillAlt600mgBold , sans-serif;}
+#content_GameVictoriousTexture h2								{width:auto; height:auto;margin:0px; padding:10px 0; font-size:40px; line-height:33px; font-weight:normal; color:#c5c0b4; text-align:left; letter-spacing:-0.02em; text-shadow:0px 0px 10px #242018; font-family: PillAlt600mgBold , sans-serif; text-transform:uppercase;}
+#content_GameVictoriousTexture h3								{width:auto; height:auto;margin:0px 0px 8px 0px; padding: 10px 0px 0px 0px; font-size:15px; line-height:21px; font-weight:normal; color:#FFFFFF; text-align:left; letter-spacing:-0.01em; text-shadow: 1px 2px #000000; font-family: PillAlt600mgRegular , sans-serif;}
+#content_GameVictoriousTexture h4								{width:auto; height:auto;margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-size:12px; text-transform:capitalize; line-height:15px; font-weight: normal; color:#B2B2B2; text-align:left; letter-spacing:-0.01em; text-shadow: 1px 1px #000000; font-family: PillAlt600mgBold , sans-serif;}
+#content_GameVictoriousTexture p									{width:auto; height:auto;margin:0px 0px 10px 0px; padding: 10px 0px 0px 0px; line-height:17px; font-weight: normal; color:#a9a8a8; font-size:12px; text-align:left; font-family:PillAlt600mgRegular, Trebuchet MS, Helvetica, sans-serif;}
+#content_GameVictoriousTexture img 								{max-width: 100%; max-height:100%;} 
+#lowerNav_GameVictorious, #footer								{position:relative; top:0; width:100%; max-width:950px;}
+
+/* ----- SLIDING BANNER STYLING -------------------------------*/
+#content_GameVictoriousTexture #home_featured_banners			{display:block; width:100%; height:100%; max-height:650px; border-bottom: solid 1px #28231b; overflow:hidden;margin-top:15px;}
+#home_featured_banners li											{overflow:hidden;}
+#home_featured_banners .balanceBanner							{margin:auto 0;}
+#home_featured_banners .banner_image_vertical					{position:relative; left:0; width:100%; height:auto;min-height:100%; margin:0;}
+#home_featured_banners .banner_image_vertical_right				{position:absolute; right:0; width:100%; height:auto;min-height:100%; margin:0;}
+#home_featured_banners .banner_image_horizontal					{position:relative; left:0; width:65%; height:auto; padding:0 17.5%; min-height:100%;}
+#home_featured_banners .banner_copy_vertical						{position:absolute; width:24%; height:auto; min-height:200px; right:10%; top:26%; z-index:2;}
+#home_featured_banners .banner_copy_vertical_left				{position:absolute; width:24%; height:auto; min-height:200px; left:10%; margin-top:6%; z-index:2;}
+#home_featured_banners .banner_copy_horizontal					{position:relative; width:65%; height:auto; padding:0; margin:3% 17.5% 5%; z-index:2;}
+#home_featured_banners .banner_copy_vertical_left_noJS									{margin-top: 1%;top: 4%;left: 34%;min-width: 200px;width: 70%;position: absolute;height: auto;z-index: 2;}
+#home_featured_banners .headline									{color:#f1eee8; font-family:PillAlt600mgBold,sans-serif; font-size:250%; line-height:88%; text-transform:uppercase; padding:1% 0; margin:0px;}
+#home_featured_banners .subhead									{color:#f1eee8; font-family:PillAlt600mgRegular,sans-serif; font-size:93%; line-height:120%; text-shadow:0 0 25px rgba(0, 0, 0, .6);padding:0;}
+#home_featured_banners .cta	a									{color:#f1eee8; font-family:PillAlt600mgMedium,sans-serif; font-size:138%; line-height:100%;text-decoration:none; text-shadow:0px 0px 10px #242018;margin:0 1% 0 0; display:block;float:left;z-index:4}
+#home_featured_banners .cta	a:hover								{color:#fff; font-family:PillAlt600mgMedium,sans-serif; font-size:138%; line-height:100%;text-decoration:none;}
+#home_featured_banners .gaming_logo								{width:10%; position:absolute; bottom:130px; right:10%; float:right;}
+/*Full Image Banner*/
+#home_featured_banners .banner_copy_vertical_full_image_banner	{left:2%;padding:1%;top:2%;min-width:250px;max-width:450px;min-height:none !imporant;width:40%;position:absolute;}
+#home_featured_banners .banner_image_fullsize					{width:100%;padding:0;display:block;overflow:hidden;}
+#home_featured_banners .full_sized_image							{min-width:100%;float:right;max-height:none;margin-top:-4%;}
+
+/*Scroller container*/
+.scroller4 														{width:100%; height:100%; display:block;behavior: url(/Include_Pages/css/rounded-corners/PIE.htc); outline:none;}
+.scroller4 .scroller-inner 										{width:100%; height:100%; margin:0px;padding:0px;position:relative;overflow: hidden;}
+.scroller4 .scroller-inner .window 								{width:100%; height:auto;}
+.scroller4 .scroller-inner .window ol.teaser-items 				{display:block; width:100%; height:auto; margin:0px;padding:0px;position:relative;}
+.scroller4 .scroller-inner .window ol.teaser-items li 				{width:100%; height:auto;margin:0;padding:0;position:absolute;display: none; top:0px; left:0px; behavior: url(/Include_Pages/css/rounded-corners/PIE.htc); outline:none; list-style:none;}
+.scroller4 .scroller-inner .column 								{display:inline;float:left;margin-left:15px;width:30%;}
+/*Scroller Button Nav*/
+.scroller4 .scroller-inner .teaser-header 						{position:absolute;bottom:5%;right:5%;width:auto; z-index:20;}
+.scroller4 .scroller-inner .teaser-header ol 						{list-style-type:none;margin:0;padding:0px;}
+.scroller4 .scroller-inner .teaser-header ol li 					{float:left;margin: 0px;padding:0px;position:relative;}
+.scroller4 .scroller-inner .teaser-header ol li a
+																{display: block; width:23px; height:24px; margin:0 10px 0 0; padding:0px; background:url("http://image.alienware.com/images/landings/sprites/header-banner-nav-button.png") 0px 0px no-repeat; outline:none; z-index:3; position:relative; float:left;}
+.scroller4 .scroller-inner .teaser-header ol li a.selected
+																{display: block; width:23px; height:24px; margin:0 10px 0 0; padding:0px; background:url("http://image.alienware.com/images/landings/sprites/header-banner-nav-button.png") 0 -24px no-repeat; outline:none; z-index:3; position:relative;}
+.scroller4 .scroller-inner .teaser-header ol li a:hover
+																{display: block; width:23px; height:24px; margin:0 10px 0 0; padding:0px; background:url("http://image.alienware.com/images/landings/sprites/header-banner-nav-button.png") 0 -24px no-repeat; outline:none; z-index:3; position:relative;}
+/*.scroller4 .scroller-inner .teaser-header ol li a span 		{display:none;}*/
+/*Scroller left and right arrows*/
+.scroller4 .scroller-inner .slideshow-controls 					{position:absolute;top:35%;left:0;width:100%; height:100%; max-height:119px; z-index:1;}
+.scroller4 .scroller-inner .slideshow-controls ul 					{list-style-type:none;margin:0px;padding:0px; z-index:1;}
+.scroller4 .scroller-inner .slideshow-controls ul li 				{float:left;margin:0px 20px;padding:0px;position:absolute;height:100%;}
+.scroller4 .scroller-inner .slideshow-controls ul li.rightArrow		{right:0;}
+.scroller4 .scroller-inner .slideshow-controls ul li a
+																{display:none; width:66px; height:119px; background:url("http://image.alienware.com/images/landings/sprites/header-banner-arrow.png") 0px 0px no-repeat; outline:none;}
+.scroller4 .scroller-inner .slideshow-controls ul li a.prev 			{-moz-transform: scaleX(-1);-o-transform: scaleX(-1);-webkit-transform: scaleX(-1);transform: scaleX(-1);filter: FlipH;-ms-filter: "FlipH"}
+.scroller4 .scroller-inner .slideshow-controls ul li a:hover
+																{display:block; background:url("http://image.alienware.com/images/landings/sprites/header-banner-arrow.png") 0px -119px no-repeat;}
+/*.scroller4 .scroller-inner span 								{display:none;}*/
+
+
+/* ----- HOMEPAGE BUCKETS -------------------------------*/
+#homepage_buckets												{display:block; width:100%; min-height:61px; max-width:950px; max-height:116px;position:relative;margin:20px auto; color:#fff;}
+#homepage_buckets .homepage_bucket								{width:23%; height:100%;float:left;position:relative;}
+#homepage_buckets #bucket1, #homepage_buckets #bucket2, #homepage_buckets #bucket3
+																{margin:0 2.66% 0 0;}
+#homepage_buckets .bucket_image									{float:left; z-index:1;}
+#homepage_buckets .bucket_label									{font-size:20px; font-family:PillAlt600mgBold, Arial, sans-serif; text-transform:uppercase; padding:4px 6px; margin:7px 0; background: rgba(0,0,0,.6); float:left; z-index:10; position:absolute;}
+#homepage_buckets a												{color:#bbb; text-decoration:none;}
+#homepage_buckets a:hover										{color:#fff; text-decoration:none;}
+
+/* ----- SUPPORT PAGE POPUP STYLING -------------------------------*/
+#Support_Redirect_ShadowBox    									{width:600px;height:350px;margin:0px auto 0px auto;padding:0px 0px 0px 0px;font-size:12px; font-family:Arial, Helvetica, sans-serif;text-align:left;background:url("http://image.alienware.com/images/ShadowBox_bg_SupportRedir.jpg") 0px 0px no-repeat;}
+#Support_Redirect_ShadowBox h4.heading-v3    						{width:auto;height:auto;margin:0px 0px 0px 0px;padding:120px 40px 12px 280px; font-weight:bold;color:#b2b2b2;}
+#Support_Redirect_ShadowBox p    									{width:auto;height:auto;margin:0px 0px 0px 0px;padding:8px 40px 20px 280px; font-weight:normal;color:#b2b2b2;}
+.btn_yes 														{background:transparent url("http://image.alienware.com/images/global_images/btn_yes.png") no-repeat scroll 0 0;cursor:pointer;height:22px;width:65px;display:block;line-height:22px; outline:none;}
+.btn_yes:hover 													{background:transparent url("http://image.alienware.com/images/global_images/btn_yes.png") 0px -29px no-repeat; outline:none;}
+.btn_yes span 													{display:none; }
+.btn_no 															{background:transparent url("http://image.alienware.com/images/global_images/btn_no.png") no-repeat scroll 0 0;cursor:pointer;height:22px;width:55px;display:block;line-height:22px; outline:none;}
+.btn_no:hover 													{background:transparent url("http://image.alienware.com/images/global_images/btn_no.png") 0px -29px no-repeat; outline:none;}
+.btn_no span 													{display:none;}
+
+.red															{color:#f00000 !important;}
+.orange															{color:#f08000 !important;}
+.yellow															{color:#f0e000 !important;}
+.blue															{color:#00a0f0 !important;}
+.green															{color:#00f000 !important;}
+.purple															{color:#9000f0 !important;}

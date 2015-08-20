@@ -1,0 +1,19 @@
+#contenttab1{
+	width: 100%;
+	height: 355px;
+}
+
+#contentimg{
+	width: 45%;
+	height: 355px;
+	float: left;
+	/*background: #000030;*/
+}
+#contentdescription{
+	width: 45%;
+	float: left;
+	height: 355px;
+	color: #555555;
+	line-height: 2.1;
+	/*background: #000000;*/
+}
